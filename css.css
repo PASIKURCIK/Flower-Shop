@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    
+}
+.russo-one-regular {
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.black-ops-one-regular {
+  font-family: "Black Ops One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.header-non{
+    height: 70px;  
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+li{
+   color: white; 
+   list-style: none;
+}
+ul{
+    padding: 50px;
+    display: flex;
+    gap: 25px;
+    justify-content: space-around end;
+    
+}
+.mainh1{
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.flower-main{
+    background-color: #131313;
+    height: auto;
+}
+main{
+    background-color: #131313;
+    height: 100vh;
+}
+footer{
+    z-index: 15;
+    height: 70px;
+    background-color: black;
+}
+.ap{
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+h1{
+    padding: 100px;
+    color: white;
+    font-weight: 400;
+    justify-content: space-around;
+}
+.fimage{
+background-color: #ffffff;
+width:15%;
+height: 50%;
+transform: skew(0deg, 0deg);
+position: absolute;
+left:20%;
+top: 25%;
+animation-name: skew;             
+animation-duration: 0.3s; 
+animation-fill-mode: forwards;
+animation-delay: 2s;
+max-width: 100px;
+}
+.simage{
+background-color: #ffffff;
+width: 15%;
+height: 65%;
+transform: skew(0deg, 0deg);
+position: absolute;
+left:40%;
+top: 25%;
+animation-name: skew;             
+animation-duration: 0.4s; 
+animation-fill-mode: forwards;
+animation-delay: 2s;
+max-width: 100px;
+}
+.timage{
+background-color: #ffffff;
+width: 15%;
+height: 50%;
+transform: skew(0deg, 0deg);
+position: absolute;
+left:60%;
+top: 25%;
+animation-name: skew;             
+animation-duration: 0.5s;   
+animation-fill-mode: forwards;  
+animation-delay: 2s;  
+max-width: 100px;   
+}
+.deliverbtn{
+    background-color: #020202;
+    box-shadow:5px 5px 20px #000000;
+    padding: 1.5%;
+    transform: scale(1.5);
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 5px;
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    padding-left: 10%;
+    padding-right: 10%;
+    transition: transform 0.3s ease;
+}
+.deliverbtn:hover{
+    transform: scale(1.7);   
+}
+.nax{
+    text-decoration: none;
+    color: #ffffff;
+}
+.load{
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: #000000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      animation: load 1s forwards;
+      animation-delay: 1s;
+}
+
+.spinner {
+  width: 80px;
+  height: 80px;
+  border: 8px solid transparent;
+  border-top: 8px solid rgb(255, 255, 255);   /* visible arc */
+  border-radius: 50%;
+  animation: spin 0.5s linear infinite;
+}
+
+.white{
+    border-radius: 5px;
+   padding: 0px;
+   background-color: white;
+}
+.flower-box{
+      padding-left: 20%;
+      display: flex;
+      grid-template-columns: repeat(2, 1fr);
+      flex-wrap: wrap;
+    }
+.filters{
+  background: #212529;
+  width:20%;
+  height:2000px;
+  position: fixed;
+  bottom: 0%;
+  z-index: 1;
+  border-right: solid #495057 1px ;
+}
+
+.flower-card{
+  margin: 5px;
+}
+
+.flower-header{
+  overflow: hidden;
+  max-height: 100px;
+  padding-left: 20%;
+}
+
+
+@keyframes skew{
+    0%{transform: skewX(0deg);}
+    100%{transform: skewX(5deg);}
+}
+
+/* keyframes */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes load {
+  from { opacity: 1; }
+  to { opacity: 0; visibility: hidden; }
+}
+@media (min-width: 800px) {
+  .fimage{
+    left: 25%;
+  }
+  .timage{
+    left: 55%;
+  }
+  .deliverbtn{
+    transform: scale(1.3);
+    left: 32.5%;
+    
+  }
+  .deliverbtn:hover{
+    transform: scale(1.5);
+  }
+}
+@media (min-width: 1100px) {
+  .fimage{
+    left: 30%;
+  }
+  .timage{
+    left: 50%;
+  }
+    .deliverbtn{
+    transform: scale(1);
+    left: 31.5%;
+    
+  }
+  .deliverbtn:hover{
+    transform: scale(1.2);
+  }
+}
+@media (max-width:600px){
+  .d-flex{
+    visibility: hidden;
+  }
+}
