@@ -16,14 +16,14 @@
 
 .header-non {
   height: 70px;
-  background-color: #000;
+  background-color: #73f18e;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 li {
-  color: #fff;
+  color: #f0a5e3;
   list-style: none;
 }
 
@@ -37,7 +37,6 @@ ul {
 .mainh1 {
   padding: 10px;
   text-align: center;
-  color: #fff;
   font-family: "Black Ops One", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -49,28 +48,27 @@ ul {
 }
 
 main {
-  background-color: #131313;
+  background-color:#f0a5e3;
   min-height: calc(100vh - 70px);
 }
 
 footer {
   z-index: 15;
   height: 70px;
-  background-color: #000;
+  background-color: #73f18e;
 }
 
 .ap {
-  color: #fff;
+  color: #f0a5e3;
   text-align: center;
   padding: 20px;
 }
 
 h1 {
   padding: 100px;
-  color: #fff;
+  color: #eeeaee;
   font-weight: 400;
-  display: flex;              /* justify-content працює лише з flex/grid */
-  justify-content: space-around;
+  display: flex;             
 }
 
 .fimage,
@@ -88,28 +86,30 @@ h1 {
 }
 
 .fimage {
+  background-image:url(Flowers/OIP22.png);
   height: 50%;
   left: 20%;
   animation-duration: 0.3s;
 }
 
 .simage {
+  background-image:url(Flowers/OIPsecond.png);
   height: 65%;
   left: 40%;
   animation-duration: 0.4s;
 }
 
 .timage {
+  background-image:url(Flowers/OIPthird.png);
   height: 50%;
   left: 60%;
   animation-duration: 0.5s;
 }
 
 .deliverbtn {
-  background-color: #020202;
+  background-color: #6c4667;
   box-shadow: 5px 5px 20px #000;
-  padding: 1.5% 10%; /* замість окремих padding-left/right */
-  transform: scale(1.5);
+  padding: 3% 10%; 
   text-decoration: none;
   color: #fff;
   border-radius: 5px;
@@ -125,7 +125,7 @@ h1 {
 
 .nax {
   text-decoration: none;
-  color: #fff;
+  color: #cd8cc2;
 }
 
 .load {
@@ -160,7 +160,6 @@ h1 {
   padding-left: 20%;
   display: flex;
   flex-wrap: wrap;
-  /* grid-template-columns не працює з flex */
 }
 
 .filters {
@@ -178,6 +177,7 @@ h1 {
 }
 
 .flower-header {
+  background-color: rgb(0,0,0);
   overflow: hidden;
   max-height: 100px;
   padding-left: 20%;
@@ -186,6 +186,7 @@ h1 {
   background-color: #131313;
   padding: 40px;
   color: #fff;
+  min-height:95vh;
 }
 
 .checkout-container {
@@ -261,7 +262,24 @@ h1 {
   background-color: #111;
 }
 
+.desc{
+  min-width:100vh;
+  width: 10%;
+  background-color: #fff;
 
+}
+
+header{
+  background-color: #73f18e;
+}
+.checkout{
+  background-color: #42754d;
+}
+
+.naxt{
+  text-decoration: none;
+  color: white;
+}
 
 @keyframes skew {
   0% { transform: skewX(0deg); }
