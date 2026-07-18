@@ -25,7 +25,7 @@
       border-radius: 5px;
       font-size: 14px;
     }
-    .signin-box button {
+    .btnn {
       width: 100%;
       padding: 10px;
       background: #3498db;
@@ -34,8 +34,15 @@
       border-radius: 5px;
       font-size: 16px;
       cursor: pointer;
+      text-decoration: none;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+      margin-top: 10px;
+      
     }
-    .signin-box button:hover {
+    .signin-box .bttn:hover {
       background: #2980b9;
     }
     .check{
