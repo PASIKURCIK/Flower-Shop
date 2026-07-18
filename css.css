@@ -31,7 +31,7 @@ ul {
   padding: 50px;
   display: flex;
   gap: 25px;
-  justify-content: space-between; /* було "space-around end" — помилка */
+  justify-content: space-between;
 }
 
 .mainh1 {
@@ -160,16 +160,17 @@ h1 {
   padding-left: 20%;
   display: flex;
   flex-wrap: wrap;
+  background-color: #6ee688;
 }
 
 .filters {
-  background: #212529;
+  background-color: #42754d;
   width: 20%;
   height: 2000px;
   position: fixed;
   bottom: 0;
   z-index: 1;
-  border-right: 1px solid #495057;
+  border-right: 1px solid #000000;
 }
 
 .flower-card {
@@ -278,7 +279,11 @@ header{
 
 .naxt{
   text-decoration: none;
-  color: white;
+  color: rgb(105, 174, 95);
+}
+nav{
+  background-color: #42754d;
+  border-bottom: 1px solid #000000;
 }
 
 @keyframes skew {
@@ -314,3 +319,4 @@ header{
   }
   .deliverbtn:hover { transform: scale(1.2); }
 }
+
